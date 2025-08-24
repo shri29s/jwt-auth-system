@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A simple JWT login system.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js"
+  },
+  "keywords": [
+    "JWT",
+    "GDG"
+  ],
+  "author": "shricharan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "mongoose": "^7.0.0"
+  }
+}
