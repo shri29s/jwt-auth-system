@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const mongoose = require("mongoose");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 // Basic middleware
 app.use(express.json());
@@ -377,7 +377,7 @@ process.on("SIGINT", async () => {
 });
 
 // Start server
-app.listen(PORT, async () => {
+app.listen(PORT, "0.0.0.0", async () => {
   console.log(`Authentication Service running on port ${PORT}`);
   console.log(`Health check: http://localhost:${PORT}/health`);
   console.log(`Ready to authenticate users!`);
